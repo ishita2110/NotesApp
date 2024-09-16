@@ -1,0 +1,13 @@
+<div class="note-form">
+    <h2>{{ editingNote ? 'Edit Note' : 'Add New Note' }}</h2>
+    <p class="subtitle">It's now or never</p>
+    <form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <input type="text" name="title" id="title" placeholder="Title" formControlName="title">
+      </div>
+      <div class="input-group">
+        <textarea name="content" id="content" placeholder="Content" formControlName="content" rows="4"></textarea>
+      </div>
+      <button type="submit">{{ editingNote ? 'Save Note' : 'Add New Note' }}</button>
+    </form>
+  </div>

@@ -1,0 +1,32 @@
+.app-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .app-header {
+    width: 200px;
+    padding-right: 20px;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  .content-container {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+    
+    .app-header {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  }

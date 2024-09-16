@@ -1,0 +1,14 @@
+<div class="note-list">
+    <div *ngFor="let note of notes" class="note">
+      <h2>{{note.title}}</h2>
+      <p>{{note.content}}</p>
+      <div class="note-actions">
+        <button (click)="editNote(note)">
+          <i class="fas fa-edit"></i>
+        </button>
+        <button (click)="deleteNote(note.id)">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+    </div>
+  </div>
